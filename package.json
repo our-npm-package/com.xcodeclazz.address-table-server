@@ -1,0 +1,30 @@
+{
+  "name": "@com.xcodeclazz/address-table-server",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "clean": "del-cli ./build/*",
+    "build": "npm run clean && tsc",
+    "release": "npm version patch && npm run build && npm publish --access public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@com.xcodeclazz/celebrate": "^0.0.1",
+    "@com.xcodeclazz/monolithic-common": "^0.0.7",
+    "@types/node": "^20.9.4",
+    "del-cli": "^5.0.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.202",
+    "lodash": "^4.17.21",
+    "tree-kill": "^1.2.2"
+  }
+}
