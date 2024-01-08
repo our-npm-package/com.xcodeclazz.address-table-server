@@ -23,6 +23,6 @@ export const RenderPayloadJoi_CreateRender = {
   serviceId: Joi.string().required(),
   authToken: Joi.string().required(),
   imageName: Joi.string().required(),
-  email: Joi.string().email().required(),
+  email: Joi.string().email({ tlds: { allow: false } }).required(),
   capacity: Joi.number().min(0).required(),
 };
