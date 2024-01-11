@@ -16,6 +16,8 @@ export interface RenderPayload_CreateRender {
   serviceId: string;
   authToken: string;
   imageName: string;
+  isActive: boolean;
+  isLocked: boolean;
 }
 
 export const RenderPayloadJoi_CreateRender = {
@@ -25,4 +27,6 @@ export const RenderPayloadJoi_CreateRender = {
   imageName: Joi.string().required(),
   email: Joi.string().email({ tlds: { allow: false } }).required(),
   capacity: Joi.number().min(0).required(),
+  isActive: Joi.boolean().required(),
+  isLocked: Joi.boolean().required(),
 };

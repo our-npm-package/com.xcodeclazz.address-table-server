@@ -5,4 +5,6 @@ export interface RenderAttrs {
   serviceId: string;
   authToken: string;
   imageName: string;
+  isActive: boolean;
+  isLocked: boolean;
 }
