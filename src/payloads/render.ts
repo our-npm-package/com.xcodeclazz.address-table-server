@@ -9,6 +9,9 @@ export const RenderPayloadJoi_RefreshRenders = {};
 export interface RenderPayload_ShowRenders {}
 export const RenderPayloadJoi_ShowRenders = {};
 
+export interface RenderPayload_DeleteRender { url: string; }
+export const RenderPayloadJoi_DeleteRender = {};
+
 export interface RenderPayload_CreateRender {
   url: string;
   email: string;
