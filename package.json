@@ -17,7 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "@com.xcodeclazz/celebrate": "^0.0.1",
-    "@com.xcodeclazz/monolithic-common": "^0.0.15",
+    "@com.xcodeclazz/monolithic-common": "^0.0.22",
     "@types/node": "^20.9.4",
     "del-cli": "^5.0.0",
     "typescript": "^5.0.4"
