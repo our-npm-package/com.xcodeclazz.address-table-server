@@ -10,7 +10,9 @@ export interface RenderPayload_ShowRenders {}
 export const RenderPayloadJoi_ShowRenders = {};
 
 export interface RenderPayload_DeleteRender { url: string; }
-export const RenderPayloadJoi_DeleteRender = {};
+export const RenderPayloadJoi_DeleteRender = {
+  url: Joi.string().required(),
+};
 
 export interface RenderPayload_CreateRender {
   url: string;
