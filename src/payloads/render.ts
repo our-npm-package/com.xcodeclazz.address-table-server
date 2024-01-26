@@ -1,4 +1,4 @@
-import { Joi } from "@com.xcodeclazz/celebrate";
+import Joi from "joi";
 
 export interface RenderPayload_PingRenders {}
 export const RenderPayloadJoi_PingRenders = {};
