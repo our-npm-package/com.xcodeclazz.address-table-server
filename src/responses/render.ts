@@ -7,7 +7,7 @@ export interface RenderResponse_ShowRenders { renders: RenderAttrs[]; }
 export interface RenderResponse_ShowDeadRenders { renders: RenderAttrs[]; }
 export interface RenderResponse_ShowCountRenders {
   state: {
-    _id: string;
+    id: string;
     count: number;
   }[];
 }
